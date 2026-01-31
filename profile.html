@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dee Trades | Forex Profile</title>
+
+<style>
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* BACKGROUND */
+body {
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)),
+    url("forex-chart.png") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d4af37;
+  padding: 20px;
+}
+
+/* MAIN PROFILE CARD */
+.profile-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(10,10,10,0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  border: 1px solid rgba(212,175,55,0.4);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  padding: 22px;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #d4af37;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.header p {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.verified {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: linear-gradient(90deg,#d4af37,#ffd700);
+  color: #000;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* STATS GRID */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.stat-box {
+  background: rgba(0,0,0,0.55);
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid rgba(212,175,55,0.25);
+}
+
+.stat-box h3 {
+  font-size: 18px;
+}
+
+.stat-box span {
+  font-size: 11px;
+  opacity: 0.85;
+}
+
+/* SECTIONS */
+.section {
+  margin-bottom: 14px;
+}
+
+.section h2 {
+  font-size: 14px;
+  margin-bottom: 6px;
+  border-left: 3px solid #d4af37;
+  padding-left: 8px;
+}
+
+.section p {
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* TAGS */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  padding: 4px 8px;
+  font-size: 10px;
+  border-radius: 8px;
+  background: rgba(212,175,55,0.15);
+  border: 1px solid rgba(212,175,55,0.4);
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  font-size: 10px;
+  opacity: 0.6;
+  margin-top: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 450px) {
+  .profile-card { padding: 16px; }
+  .header h1 { font-size: 18px; }
+  .stat-box h3 { font-size: 16px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="profile-card">
+
+  <!-- HEADER -->
+  <div class="header">
+    <img src="avatar.png" class="avatar" alt="Dee Trades">
+    <h1>DEE TRADES</h1>
+    <p>Technical Analyst • Smart Money Concepts</p>
+    <div class="verified">✔ VERIFIED FOREX TRADER</div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat-box">
+      <h3>68%</h3>
+      <span>Win Rate</span>
+    </div>
+    <div class="stat-box">
+      <h3>1:2+</h3>
+      <span>Risk : Reward</span>
+    </div>
+    <div class="stat-box">
+      <h3>10</h3>
+      <span>Trades / Week</span>
+    </div>
+    <div class="stat-box">
+      <h3>2+ Yrs</h3>
+      <span>Experience</span>
+    </div>
+  </div>
+
+  <!-- STRATEGY -->
+  <div class="section">
+    <h2>Trading Strategy</h2>
+    <p>
+      Smart Money Concepts (SMC) focusing on market structure, liquidity,
+      order blocks, and institutional price delivery. Execution on 1H → 15M timeframes.
+    </p>
+  </div>
+
+  <!-- SPECIALIZATION -->
+  <div class="section">
+    <h2>Specialization</h2>
+    <div class="tags">
+      <div class="tag">SMC</div>
+      <div class="tag">Liquidity Sweeps</div>
+      <div class="tag">Order Blocks</div>
+      <div class="tag">NY Session</div>
+      <div class="tag">Risk Management</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    ID: DT-FX-001 • Verified via QR Code
+  </div>
+
+</div>
+
+</body>
+</html>
